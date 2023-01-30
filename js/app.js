@@ -1,3 +1,19 @@
+// --------------------- MENU DE NAVEGACION -------------------------------
+// Botones del menu
+const btnInicio = document.getElementById('inicio');
+const btnNavTerminadas = document.getElementById('vista-tareas-terminadas');
+const btnNavProgreso = document.getElementById('vista-tareas-progreso');
+const btnNavPendientes = document.getElementById('vista-tareas-pendientes');
+const cardTareas = document.getElementById('card-tareas')
+
+
+btnInicio.addEventListener('click', ()=>{
+    cardTareas.classList.remove('is-hidden');
+    console.log('hola');
+})
+
+
+/* ---------------------------------------------------------------- */
 const tareas = [
     {
         Titulo: 'Estudiar html',
@@ -73,4 +89,5 @@ const existeTarea = (titulo) => {
     }
 } 
 console.log(existeTarea('Estudiar html'))
+
 
